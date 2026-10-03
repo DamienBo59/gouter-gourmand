@@ -12,7 +12,7 @@
 | Chemin local des blogs | `~/code/sites/pbn-perso/<repo>` | `~/code/sites/blogs-geo/` |
 | Chemin local du template | `~/code/sites/_blog-template-perso` | `~/code/sites/_blog-template` |
 | Nomenclature des repos | `pbn-geo-<nom>` | `pbn-geo-<nom>` |
-| Documentation | Drive perso, `100 Areas/seo_freelance/Site web/parc-pbn/` | Drive datashake, `100 Areas/Site web/pbn geo/` |
+| Documentation | Drive perso, `100 Areas/seo_freelance/Site web/parc-pbn/` | Drive datashake, `100 Areas/SEO/Site web/pbn geo/` |
 
 **Regles dures du parc perso :**
 
