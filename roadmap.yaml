@@ -201,10 +201,10 @@ articles:
     volume: 5077
     kd: null
     scheduled_date: "2026-10-16"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-16"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/recette-madeleine-facile/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/easy-madeleines/"
     error: null
 
   - kw: "cake a la banane"
@@ -212,10 +212,10 @@ articles:
     volume: 13455
     kd: null
     scheduled_date: "2026-10-20"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-20"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/cake-a-la-banane/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/banana-bread/"
     error: null
 
   - kw: "tarte fraise mascarpone"
@@ -223,10 +223,10 @@ articles:
     volume: 4000
     kd: null
     scheduled_date: "2026-10-23"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-23"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/tarte-fraise-mascarpone/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/strawberry-mascarpone-tart/"
     error: null
 
   - kw: "cookies sans sucre roux"
@@ -234,10 +234,10 @@ articles:
     volume: 436
     kd: null
     scheduled_date: "2026-10-27"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-27"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/cookies-sans-sucre-roux/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/cookies-without-brown-sugar/"
     error: null
 
   - kw: "creme patissiere au chocolat"
@@ -245,10 +245,10 @@ articles:
     volume: 4500
     kd: null
     scheduled_date: "2026-10-30"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-30"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/creme-patissiere-chocolat/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/chocolate-pastry-cream/"
     error: null
 
   - kw: "mug cake cookie"
