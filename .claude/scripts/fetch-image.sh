@@ -31,8 +31,8 @@
 #
 # CLES. Ce repo est PUBLIC : aucune cle n'est ecrite ici. Le script les lit dans
 # l'environnement (`PEXELS_API_KEY`, `UNSPLASH_ACCESS_KEY`), et a defaut dans le fichier
-# `.env` dont le chemin est donne par `IMAGE_KEYS_ENV_FILE`. Sans cle, la cascade demarre
-# a Commons : le run publie quand meme.
+# `.env` donne par `IMAGE_KEYS_ENV_FILE`, par defaut `~/.config/blog-images/keys.env`
+# (fichier local, hors repo). Sans cle, la cascade demarre a Commons.
 #
 # Usage : fetch-image.sh "<query>" "<slug>" [output_dir]
 # Output stdout (3 lignes) :
@@ -62,9 +62,9 @@ QUERY_ENCODED=$(printf '%s' "$QUERY" | python3 -c "import sys,urllib.parse; prin
 
 # --- Resolution des cles ------------------------------------------------------
 # Priorite a l'environnement (cas de la routine cloud). A defaut, on lit le `.env`
-# designe par IMAGE_KEYS_ENV_FILE : aucun chemin de machine n'est ecrit dans ce repo.
+# designe par IMAGE_KEYS_ENV_FILE, par defaut ~/.config/blog-images/keys.env.
 key_from_env_file() {
-    local name="$1" f="${IMAGE_KEYS_ENV_FILE:-}"
+    local name="$1" f="${IMAGE_KEYS_ENV_FILE:-$HOME/.config/blog-images/keys.env}"
     [ -n "$f" ] && [ -f "$f" ] || return 1
     local v
     v=$(grep -m1 "^${name}=" "$f" 2>/dev/null | cut -d= -f2- | tr -d '"' | tr -d '\r')
