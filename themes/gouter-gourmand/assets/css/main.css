@@ -608,9 +608,8 @@ a.leaders__label:hover { color: var(--berry); }
 
 /* ---------- 12. Article ---------- */
 
-/* L'article ouvre sur la typographie, jamais sur la photo : c'est la règle
-   du parc, elle distingue un article d'une page de recette au premier coup
-   d'oeil. */
+/* L'article ouvre sur la typographie, jamais sur la photo : c'est ce qui
+   distingue un article d'une page de recette au premier coup d'oeil. */
 .article-head { padding: clamp(2.5rem, 6vw, 4.5rem) 0 var(--space-md); }
 .breadcrumb {
   font-size: .72rem;
@@ -829,13 +828,13 @@ a.leaders__label:hover { color: var(--berry); }
 .doodle-inline svg { width: 100%; height: auto; }
 .card__media .doodle-inline { width: 34%; max-width: 120px; }
 
-/* pbn-legal */
+/* legal-links */
 .site-footer .footer-legal ul,.footer-legal ul{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:center}
 .footer-legal li{margin:0}
 .footer-legal a{font-size:.85rem;opacity:.75;text-decoration:none}
 .footer-legal a:hover{opacity:1;text-decoration:underline}
 
-/* Cadrage du bloc de liens legaux insere par pbn-legal (hors .wrap). */
+/* Cadrage du bloc de liens legaux insere par le gabarit des pages legales (hors .wrap). */
 .site-footer > .footer-legal ul {
   width: min(100% - (2 * var(--gutter)), var(--container));
   margin-inline: auto;

@@ -1,22 +1,15 @@
 #!/bin/bash
-# fetch-image.sh — parc PBN GEO PERSO
+# fetch-image.sh — Goûter Gourmand
 # Recupere une image libre de droit compatible usage commercial pour le hero d'un article.
-#
-# Repris du parc PBN GEO de datashake (version du 2026-09-08) et adapte au parc perso
-# le 2026-09-12. Trois differences avec l'original, toutes documentees ici :
-#   - le palier 0 "banque centrale datashake" est retire, il n'a pas d'equivalent perso ;
-#   - un palier WIKIMEDIA COMMONS est ajoute AVANT Openverse (voir ci-dessous) ;
-#   - les cles sont lues dans le SEUL `.env` du Drive perso, jamais dans celui du pro :
-#     le parc perso n'a aucun lien avec datashake, y compris technique.
 #
 # CASCADE DE SOURCES. L'ordre n'est pas negociable :
 #   1. Pexels    — banque commerciale, indexation marketing, ratio paysage garanti.
 #   2. Unsplash  — repli. Plafonne a 50 req/h en mode Demo, et ses guidelines imposent
 #      de pinger `links.download_location` a chaque telechargement : c'est fait plus bas,
 #      ne pas le retirer, c'est une condition d'utilisation de l'API.
-#   3. Wikimedia Commons — SANS CLE, et c'est ce qui en fait le palier utile du parc perso.
-#      **`api.openverse.org` est injoignable depuis le Mac de Damien** (timeout complet,
-#      et 403 sur `openverse.org`, mesure du 2026-09-12), donc sans ce palier la cascade
+#   3. Wikimedia Commons — SANS CLE, et c'est ce qui en fait le palier utile du blog.
+#      **`api.openverse.org` est souvent injoignable** (timeout complet, et 403 sur
+#      `openverse.org`, mesure du 2026-09-12), donc sans ce palier la cascade
 #      tombe directement au placeholder tant qu'aucune cle n'est posee. Commons est l'une
 #      des sources que federe Openverse, on l'interroge donc en direct. Filtres appliques :
 #      licences autorisant l'usage commercial et la modification, exclusion de `-nc` et
@@ -27,18 +20,19 @@
 #   5. Placeholder de charte genere en local — ne peut jamais echouer.
 #
 # ⚠️ **Le controle visuel de l'image reste obligatoire avant publication, quelle que soit
-# la banque.** Mesure du 2026-09-12 sur 10 heros du parc perso : 3 images a rejeter malgre
-# un titre de fichier correct, dont un fichier intitule « Chamomile Flower » qui montrait
-# une tout autre plante. Le titre ne garantit rien sur le contenu.
+# la banque.** Sur un echantillon de 10 heros, 3 images etaient a rejeter malgre un titre
+# de fichier correct, dont une annoncee comme une plante et qui en montrait une autre.
+# Le titre ne garantit rien sur le contenu.
 #
 # ANTI-DOUBLON. Deux requetes voisines convergent sur la meme photo : le scoring prend
 # toujours le meilleur candidat. Le script tient donc un registre `.claude/hero-sources.json`
 # (slug -> "<banque>:<id>") et ECARTE tout candidat deja utilise par un autre article.
 # Le registre est versionne : il ne contient que des identifiants publics de photos.
 #
-# CLES. Les repos du parc sont PUBLICS : aucune cle n'est ecrite ici. Le script les lit
-# dans l'environnement (`PEXELS_API_KEY`, `UNSPLASH_ACCESS_KEY`), et a defaut dans le
-# `.env` du Drive PERSO. Sans cle, la cascade demarre a Commons : le run publie quand meme.
+# CLES. Ce repo est PUBLIC : aucune cle n'est ecrite ici. Le script les lit dans
+# l'environnement (`PEXELS_API_KEY`, `UNSPLASH_ACCESS_KEY`), et a defaut dans le fichier
+# `.env` dont le chemin est donne par `IMAGE_KEYS_ENV_FILE`. Sans cle, la cascade demarre
+# a Commons : le run publie quand meme.
 #
 # Usage : fetch-image.sh "<query>" "<slug>" [output_dir]
 # Output stdout (3 lignes) :
@@ -61,25 +55,20 @@ fi
 
 mkdir -p "$OUTPUT_DIR"
 
-USER_AGENT="brunch-story-bot/2.0 (+https://www.brunch-story.fr/)"
+USER_AGENT="gouter-gourmand-images/1.0 (+https://www.gouter-gourmand.fr/)"
 SCRIPT_DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 QUERY_ENCODED=$(printf '%s' "$QUERY" | python3 -c "import sys,urllib.parse; print(urllib.parse.quote(sys.stdin.read().strip()))" 2>/dev/null || echo "$QUERY" | sed 's/ /+/g')
 
 # --- Resolution des cles ------------------------------------------------------
-# Priorite a l'environnement (cas de la routine cloud). A defaut, on cherche un
-# `.env` sur le Mac sans jamais ecrire de chemin nominatif dans ce repo public.
+# Priorite a l'environnement (cas de la routine cloud). A defaut, on lit le `.env`
+# designe par IMAGE_KEYS_ENV_FILE : aucun chemin de machine n'est ecrit dans ce repo.
 key_from_env_file() {
-    # Drive PERSO uniquement. Le glob d'origine balayait TOUS les Drives montes et
-    # aurait donc pioche la cle du Drive datashake : le parc perso ne doit avoir aucun
-    # lien avec le pro, credentials compris.
-    local name="$1" f
-    for f in "$HOME"/Library/CloudStorage/GoogleDrive-borieud@gmail.com/*/000?Data?p/.claude/secrets/.env; do
-        [ -f "$f" ] || continue
-        local v
-        v=$(grep -m1 "^${name}=" "$f" 2>/dev/null | cut -d= -f2- | tr -d '"' | tr -d '\r')
-        if [ -n "${v:-}" ]; then printf '%s' "$v"; return 0; fi
-    done
+    local name="$1" f="${IMAGE_KEYS_ENV_FILE:-}"
+    [ -n "$f" ] && [ -f "$f" ] || return 1
+    local v
+    v=$(grep -m1 "^${name}=" "$f" 2>/dev/null | cut -d= -f2- | tr -d '"' | tr -d '\r')
+    if [ -n "${v:-}" ]; then printf '%s' "$v"; return 0; fi
     return 1
 }
 
@@ -95,9 +84,9 @@ IMAGE_SOURCE=""
 IMAGE_ID=""
 
 # --- Filet de securite : placeholder genere en local -------------------------
-# Sans ce filet, la skill publiait l'article SANS AUCUN visuel : 9 articles FR sur 14
-# entre le 10 et le 26/08/2026. Un placeholder de charte vaut mieux qu'un hero vide,
-# et il ne peut jamais echouer puisqu'il ne sort pas de la machine.
+# Sans ce filet, un echec de telechargement publiait l'article SANS AUCUN visuel.
+# Un placeholder de charte vaut mieux qu'un hero vide, et il ne peut jamais echouer
+# puisqu'il ne sort pas de la machine.
 emit_placeholder() {
     local reason="$1"
     local out="$OUTPUT_DIR/$SLUG.png"
@@ -285,7 +274,7 @@ if not cands:
     sys.exit(3)
 cands.sort(key=lambda c: c[0], reverse=True)
 _s, r, u = cands[0]
-# 'raw' est la source non bornee : on lui impose la largeur cible cote CDN Unsplash
+# 'raw' est la source non bornee : on lui impose la largeur voulue cote CDN Unsplash
 if 'images.unsplash.com' in u:
     u += ('&' if '?' in u else '?') + 'w=1600&q=82&fm=jpg&fit=max'
 print(f\"[fetch-image] Unsplash retenu {r.get('width')}x{r.get('height')} sur {len(cands)} candidats\", file=sys.stderr)
@@ -313,8 +302,8 @@ ping_unsplash_download() {
 }
 
 # --- Palier 3 : Wikimedia Commons (sans cle) ---------------------------------
-# Palier propre au parc perso. Openverse etant injoignable depuis ce Mac (voir l'en-tete),
-# c'est lui qui porte reellement la cascade tant qu'aucune cle Pexels/Unsplash n'est posee.
+# Openverse etant souvent injoignable (voir l'en-tete), c'est ce palier qui porte
+# reellement la cascade quand aucune cle Pexels/Unsplash n'est disponible.
 try_commons() {
     echo "[fetch-image] Commons : $QUERY" >&2
     local json
@@ -382,8 +371,7 @@ print(pid)
 
 # --- Palier 4 : Openverse (dernier recours, sans cle) ------------------------
 # RETRY : Openverse renvoie des 500 de facon intermittente sur des requetes
-# parfaitement valides (mesure du 2026-08-27 : "smartphone" et "laptop" en 500
-# quand "influencer" rendait 240 resultats dans la meme minute).
+# parfaitement valides, alors qu'une autre requete passe dans la meme minute.
 try_openverse() {
     echo "[fetch-image] Openverse (dernier recours) : $QUERY" >&2
     local json

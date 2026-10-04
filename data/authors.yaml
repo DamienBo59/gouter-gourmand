@@ -1,14 +1,7 @@
-# Auteur unique de gouter-gourmand.fr.
+# Auteur unique de gouter-gourmand.fr. Son id est la valeur du champ `author`
+# des articles, et le nom affiche est public et definitif.
 #
-# Règle du parc : un blog ne porte QUE l'auteur de sa thématique. Les deux
-# autres personas (helene-vasseur, bastien-delorme) ne doivent jamais être
-# copiés ici : un auteur qui signe sur deux blogs relie les deux sites.
-#
-# La source de vérité est la fiche persona, pas ce fichier :
-#   100 Areas/seo_freelance/Reddit/parc-reddit/personas/patisserie-gouter/
-#     persona-P02-patissiere-amateur.md
-# La lire avant d'écrire : elle porte la voix, les faits engagés et les
-# interdits (en particulier : aucun angle nutrition ou santé).
+# Interdit editorial attache a cette signature : aucun angle nutrition ou sante.
 
 marion-kieffer:
   id: marion-kieffer
@@ -16,8 +9,6 @@ marion-kieffer:
   type: person
   avatar: ""            # à remettre à /images/authors/marion-kieffer.webp le jour où le fichier existe
   photos: []            # idem pour les visuels du bloc auteur
-  persona: P02
-  blog: gouter-gourmand.fr
   jobTitle:
     fr: Pâtissière amateur
     en: Home baker

@@ -13,7 +13,7 @@
 {{ if .Params.noindex }}<meta name="robots" content="noindex, follow">{{ else }}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{/* Alternates de langue : toujours émis, la paire FR/EN est la règle du parc. */}}
+{{/* Alternates de langue : toujours émis, chaque page existe en FR et en EN. */}}
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{ end }}
@@ -46,8 +46,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {{ with .Site.Home.OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">{{ end }}
 
-{{/* Données structurées. Un seul auteur pour tout le site, c'est la règle
-     du parc : une voix par blog. */}}
+{{/* Données structurées. Un seul auteur pour tout le site : une voix par blog. */}}
 {{- $author := index hugo.Data.authors (.Site.Params.site_author_key | default "marion-kieffer") -}}
 {{- $authorName := "" -}}{{- with $author }}{{ $authorName = .name }}{{ end -}}
 <script type="application/ld+json">

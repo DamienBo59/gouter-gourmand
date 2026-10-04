@@ -57,7 +57,7 @@
   </div>
 </article>
 
-{{/* Maillage interne : la doctrine du parc impose au moins 3 liens par
+{{/* Maillage interne : la règle est d'au moins 3 liens par
      article, ce bloc garantit le plancher même si le corps en manque. */}}
 {{ $related := .Site.RegularPages.Related . | first 3 }}
 {{ with $related }}

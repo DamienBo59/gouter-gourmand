@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """Genere un visuel de couverture PNG, sans aucune dependance ni acces reseau.
 
-Parc PBN GEO PERSO. Repris du parc datashake, seules les palettes changent : elles
-suivent les chartes de brunch-story.fr et mamie-the.fr.
+Les couleurs suivent la charte de Goûter Gourmand.
 
 Filet de securite de fetch-image.sh. L'environnement cloud des routines bloque
-les domaines commerciaux via son proxy egress (cf. "routines pbn.md"), donc le
-telechargement d'une photo y echoue par conception et la skill publiait alors
-l'article SANS AUCUN visuel.
+les domaines commerciaux via son proxy egress, donc le telechargement d'une
+photo y echoue par conception et la skill publiait alors l'article SANS AUCUN
+visuel.
 
 Pourquoi du PNG et pas du SVG : `layouts/partials/head.html` construit l'og:image
 a partir du champ `image` du frontmatter, et aucun reseau social ne sait lire un
@@ -21,17 +20,13 @@ import sys, zlib, struct
 # 1200x630 : format attendu par les og:image, et exploitable en hero (recadre)
 W, H = 1200, 630
 
-# Palettes des chartes du parc perso, choisies de facon stable a partir du slug.
-# brunch-story : terracotta #B4471F, ambre #E0A13A, sauge #5F7A52.
-# mamie-the    : terracotta #B4593C, miel #C89B3C.
-# Les deux chartes etant voisines, une seule liste sert aux deux blogs.
+# Palettes choisies de facon stable a partir du slug.
+# Charte du blog : chocolat #3B2019, framboise #E2485C, miel #E4A93C, porcelaine #3F6C8E.
 PALETTES = [
-    ((180, 71, 31),  (138, 54, 20)),   # terracotta brunch-story
-    ((224, 161, 58), (146, 100, 30)),  # ambre
-    ((95, 122, 82),  (52, 70, 44)),    # sauge
-    ((180, 89, 60),  (147, 69, 44)),   # terracotta mamie-the
-    ((200, 155, 60), (130, 97, 32)),   # miel
-    ((109, 74, 48),  (62, 42, 26)),    # brun cafe
+    ((92, 52, 40),   (59, 32, 25)),    # chocolat
+    ((226, 72, 92),  (184, 45, 64)),   # framboise
+    ((228, 169, 60), (160, 112, 30)),  # miel
+    ((63, 108, 142), (40, 72, 98)),    # porcelaine
 ]
 
 def build(slug, w=W, h=H):

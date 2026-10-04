@@ -43,7 +43,7 @@
 #
 # CHAMPS EDITABLES PAR L'HUMAIN
 # -----------------------------
-#   kw              (obligatoire) Mot-cle principal SEO cible. Langue principale du blog.
+#   kw              (obligatoire) Mot-cle principal SEO vise. Langue principale du blog.
 #   category        (obligatoire) Categorie du blog. Doit matcher une categorie definie
 #                                 dans le hugo.toml (en langue principale).
 #   volume          (informatif)  Volume mensuel de recherche. Aide l'humain a prioriser,
@@ -95,27 +95,20 @@
 
 
 # ==========================================================================
-# ROADMAP RECONSTRUITE LE 2026-09-12 SUR LE CORPUS DE SEPTEMBRE
+# ROADMAP BATIE LE 2026-09-20 SUR L'ETUDE DE MOTS-CLES D'AOUT
 # --------------------------------------------------------------------------
-# L'ancienne roadmap (49 entrees) etait batie sur le corpus d'aout, soit
-# 87 mots-cles. Le corpus de septembre en compte 1 906, dont 632 en longue
-# traine reellement ciblable. Elle est donc remplacee, pas completee.
+# 106 mots-cles de depart, filtres sur la pertinence thematique, l'intention
+# informationnelle et le volume. Ouverture par la rubrique « Faire sans »,
+# seul territoire de la niche ou les gros sites de recettes ne sont pas.
 #
-# Filtres appliques au corpus (voir la fiche mots-cles 2026-09 du Drive) :
-#   - 3 mots ou plus, volume entre 150 et 3 000, KGR < 0,6 quand il existe
-#   - frontiere gouter-gourmand.fr respectee : gateaux, cookies, tartes et
-#     galette des rois laisses a P02. Brioche et pain perdu restent ici
-#   - requetes produit a SERP tenue par les marques ecartees en frontal
-#     (granola, muesli, flocons d'avoine, graines de chia en requete nue)
-#   - local, marques, materiel et transactionnel retires
-#   - garde-fou cannibalisation passe contre les 9 articles publies, les
-#     49 entrees de l'ancienne roadmap et les 60 entrees entre elles
+# Garde-fou anti-cannibalisation a trois niveaux, passe a la construction
+# puis a chaque lot contre les articles publies ou programmes.
 #
-# Controles passes : 0 couple cannibalisant, 0 paire consecutive de meme
-# categorie, au moins 3 categories sur toute fenetre de 5 articles.
+# Limite connue : l'etude d'aout mesure la couverture des concurrents, pas
+# la demande. Une extraction plus large reste a faire.
 #
-# 60 entrees, 12 par rubrique, 72 006 de volume mensuel cible,
-# du 2026-09-12 au 2027-03-23, cadence mardi et vendredi.
+# 24 entrees, 4 a 5 par rubrique, 217 181 de volume mensuel vise,
+# du 2026-09-22 au 2026-12-11, cadence mardi et vendredi.
 # ==========================================================================
 
 articles:
