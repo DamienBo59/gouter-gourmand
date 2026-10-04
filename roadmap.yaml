@@ -179,10 +179,10 @@ articles:
     volume: 2636
     kd: null
     scheduled_date: "2026-10-09"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-09"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/gateau-chocolat-sans-sucre/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/sugar-free-chocolate-cake/"
     error: null
 
   - kw: "mascarpone en chantilly"
@@ -190,10 +190,10 @@ articles:
     volume: 22583
     kd: null
     scheduled_date: "2026-10-13"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-13"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/mascarpone-en-chantilly/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/mascarpone-whipped-cream/"
     error: null
 
   - kw: "recette facile madeleine"
