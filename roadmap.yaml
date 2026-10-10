@@ -249,10 +249,10 @@ articles:
     volume: 7364
     kd: null
     scheduled_date: "2026-11-03"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-11-03"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/mug-cake-cookie/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/cookie-mug-cake/"
     error: null
 
   - kw: "cake au citron"
@@ -260,10 +260,10 @@ articles:
     volume: 30100
     kd: null
     scheduled_date: "2026-11-06"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-11-06"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/cake-au-citron/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/lemon-loaf-cake/"
     error: null
 
   - kw: "tarte praline"
@@ -271,10 +271,10 @@ articles:
     volume: 3667
     kd: null
     scheduled_date: "2026-11-10"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-11-10"
+    published_url_fr: "https://www.gouter-gourmand.fr/blog/tarte-praline/"
+    published_url_en: "https://www.gouter-gourmand.fr/en/blog/pink-praline-tart/"
     error: null
 
   - kw: "conservation banana bread"
