@@ -1,9 +1,9 @@
 ---
 title: "Cookies sans sucre roux, et moelleux"
 description: "Sans sucre roux, un cookie s'étale, pâlit et croque. Ce que le sucre roux apportait vraiment, et comment le remplacer avec du sucre blanc et une cuillère de miel."
-date: 2026-10-27T04:00:00+01:00
-publishDate: 2026-10-27T04:00:00+01:00
-lastmod: 2026-10-27T04:00:00+01:00
+date: 2026-10-10T07:40:00+02:00
+publishDate: 2026-10-10T07:40:00+02:00
+lastmod: 2026-10-10T07:40:00+02:00
 categories: ["Faire sans"]
 tags: ["cookies", "sucre roux", "vergeoise", "substitution", "sucre blanc"]
 author: marion-kieffer

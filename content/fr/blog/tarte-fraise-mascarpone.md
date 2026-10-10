@@ -1,9 +1,9 @@
 ---
 title: "Tarte fraise mascarpone, sans fond mou"
 description: "Une tarte fraise mascarpone se détrempe en quelques heures si rien n'isole la pâte de la crème et des fruits. L'ordre, les temps et les proportions qui la font tenir."
-date: 2026-10-23T05:00:00+02:00
-publishDate: 2026-10-23T05:00:00+02:00
-lastmod: 2026-10-23T05:00:00+02:00
+date: 2026-10-10T07:30:00+02:00
+publishDate: 2026-10-10T07:30:00+02:00
+lastmod: 2026-10-10T07:30:00+02:00
 categories: ["Tartes et classiques"]
 tags: ["tarte", "fraise", "mascarpone", "pâte sablée", "montage"]
 author: marion-kieffer

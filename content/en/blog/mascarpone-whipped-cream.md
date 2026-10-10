@@ -1,9 +1,9 @@
 ---
 title: "Mascarpone whipped cream: the method"
 description: "Mascarpone alone does not whip, it curdles. The right ratio with double cream, the order of the steps, and how to rescue a split cream."
-date: 2026-10-13T05:00:00+02:00
-publishDate: 2026-10-13T05:00:00+02:00
-lastmod: 2026-10-13T05:00:00+02:00
+date: 2026-10-10T07:00:00+02:00
+publishDate: 2026-10-10T07:00:00+02:00
+lastmod: 2026-10-10T07:00:00+02:00
 categories: ["Creams and technique"]
 tags: ["mascarpone", "whipped cream", "technique", "stabilised cream"]
 author: marion-kieffer

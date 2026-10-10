@@ -1,9 +1,9 @@
 ---
 title: "Chocolate pastry cream"
 description: "Chocolate sets pastry cream as it cools: a vanilla recipe with chocolate added comes out far too firm. The right amounts and the method."
-date: 2026-10-30T04:00:00+01:00
-publishDate: 2026-10-30T04:00:00+01:00
-lastmod: 2026-10-30T04:00:00+01:00
+date: 2026-10-10T07:50:00+02:00
+publishDate: 2026-10-10T07:50:00+02:00
+lastmod: 2026-10-10T07:50:00+02:00
 categories: ["Creams and technique"]
 tags: ["pastry cream", "chocolate", "starch", "eclair", "technique"]
 author: marion-kieffer

@@ -1,9 +1,9 @@
 ---
 title: "Lemon loaf cake, moist and fragrant"
 description: "A lemon loaf rarely fails for lack of lemon: it fails because the flavour goes in the wrong place, and because it dries out. The zest, the syrup, the bake and the glaze, in that order."
-date: 2026-11-06T04:00:00+01:00
-publishDate: 2026-11-06T04:00:00+01:00
-lastmod: 2026-11-06T04:00:00+01:00
+date: 2026-10-10T08:10:00+02:00
+publishDate: 2026-10-10T08:10:00+02:00
+lastmod: 2026-10-10T08:10:00+02:00
 categories: ["Cakes and loaves"]
 tags: ["lemon", "loaf cake", "moist", "syrup", "glaze"]
 author: marion-kieffer

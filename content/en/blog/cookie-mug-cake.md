@@ -1,9 +1,9 @@
 ---
 title: "Cookie mug cake, soft in the microwave"
 description: "A cookie mug cake nearly always fails the same way: it comes out spongy or rubbery. The yolk-only trick, the right quantities and the cooking time that keep it soft and gooey."
-date: 2026-11-03T04:00:00+01:00
-publishDate: 2026-11-03T04:00:00+01:00
-lastmod: 2026-11-03T04:00:00+01:00
+date: 2026-10-10T08:00:00+02:00
+publishDate: 2026-10-10T08:00:00+02:00
+lastmod: 2026-10-10T08:00:00+02:00
 categories: ["Small bakes"]
 tags: ["mug cake", "cookie", "microwave", "chocolate chips", "quick treats"]
 author: marion-kieffer

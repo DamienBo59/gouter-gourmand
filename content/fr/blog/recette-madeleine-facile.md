@@ -1,9 +1,9 @@
 ---
 title: "Recette facile de madeleines à bosse"
 description: "Une recette facile de madeleines tient en cinq ingrédients à poids égal. La bosse, elle, vient d'un choc thermique que la plupart des recettes oublient de régler."
-date: 2026-10-16T05:00:00+02:00
-publishDate: 2026-10-16T05:00:00+02:00
-lastmod: 2026-10-16T05:00:00+02:00
+date: 2026-10-10T07:10:00+02:00
+publishDate: 2026-10-10T07:10:00+02:00
+lastmod: 2026-10-10T07:10:00+02:00
 categories: ["Petits goûters"]
 tags: ["madeleine", "goûter", "repos", "four", "moule"]
 author: marion-kieffer

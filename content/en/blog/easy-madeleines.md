@@ -1,9 +1,9 @@
 ---
 title: "Easy madeleines with a proper hump"
 description: "An easy madeleine recipe takes five ingredients in equal weights. The hump comes from a thermal shock that most recipes never bother to explain."
-date: 2026-10-16T05:00:00+02:00
-publishDate: 2026-10-16T05:00:00+02:00
-lastmod: 2026-10-16T05:00:00+02:00
+date: 2026-10-10T07:10:00+02:00
+publishDate: 2026-10-10T07:10:00+02:00
+lastmod: 2026-10-10T07:10:00+02:00
 categories: ["Small bakes"]
 tags: ["madeleines", "afternoon treats", "resting", "oven", "tins"]
 author: marion-kieffer

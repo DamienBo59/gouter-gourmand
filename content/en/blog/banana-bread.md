@@ -1,9 +1,9 @@
 ---
 title: "Banana bread without the gummy middle"
 description: "Banana bread rarely fails for lack of flavour: it fails from too much banana or too little baking. The right weight, the right mixing, and how to tell it is done."
-date: 2026-10-20T05:00:00+02:00
-publishDate: 2026-10-20T05:00:00+02:00
-lastmod: 2026-10-20T05:00:00+02:00
+date: 2026-10-10T07:20:00+02:00
+publishDate: 2026-10-10T07:20:00+02:00
+lastmod: 2026-10-10T07:20:00+02:00
 categories: ["Cakes and loaves"]
 tags: ["banana", "loaf cake", "moist", "baking", "afternoon treats"]
 author: marion-kieffer

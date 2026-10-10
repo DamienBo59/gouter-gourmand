@@ -1,9 +1,9 @@
 ---
 title: "Strawberry mascarpone tart, no soggy base"
 description: "A strawberry mascarpone tart goes soggy within hours if nothing separates the pastry from the cream and fruit. The order, timings and ratios that keep it crisp."
-date: 2026-10-23T05:00:00+02:00
-publishDate: 2026-10-23T05:00:00+02:00
-lastmod: 2026-10-23T05:00:00+02:00
+date: 2026-10-10T07:30:00+02:00
+publishDate: 2026-10-10T07:30:00+02:00
+lastmod: 2026-10-10T07:30:00+02:00
 categories: ["Tarts and classics"]
 tags: ["tart", "strawberry", "mascarpone", "shortcrust", "assembly"]
 author: marion-kieffer

@@ -1,9 +1,9 @@
 ---
 title: "Pink praline tart, the Lyon classic"
 description: "A good praline tart needs just two ingredients, pink pralines and cream, but everything rides on the reduction. Too short and it runs; too long and it breaks your teeth. The signs to aim for."
-date: 2026-11-10T04:00:00+01:00
-publishDate: 2026-11-10T04:00:00+01:00
-lastmod: 2026-11-10T04:00:00+01:00
+date: 2026-10-10T08:20:00+02:00
+publishDate: 2026-10-10T08:20:00+02:00
+lastmod: 2026-10-10T08:20:00+02:00
 categories: ["Tarts and classics"]
 tags: ["tart", "pink praline", "Lyon", "shortcrust", "cream"]
 author: marion-kieffer

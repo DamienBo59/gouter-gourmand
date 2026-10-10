@@ -16,7 +16,7 @@
     <p class="hero__lede">{{ .Params.lede | default .Site.Language.Params.description }}</p>
     <div class="hero__actions">
       <a class="btn btn--berry" href="{{ relLangURL "blog/" }}">{{ i18n "read_articles" | default "Lire les articles" }}</a>
-      <a class="btn btn--cream" href="{{ relLangURL "a-propos/" }}">{{ i18n "about_author" | default "Qui écrit ici" }}</a>
+      <a class="btn btn--cream" href="{{ relLangURL (cond (eq site.Language.Lang "en") "about/" "a-propos/") }}">{{ i18n "about_author" | default "Qui écrit ici" }}</a>
     </div>
   </div>
 

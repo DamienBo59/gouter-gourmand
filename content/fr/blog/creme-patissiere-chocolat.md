@@ -1,9 +1,9 @@
 ---
 title: "Crème pâtissière au chocolat"
 description: "Le chocolat fige la crème pâtissière en refroidissant : une recette vanille à laquelle on ajoute du chocolat donne une crème trop ferme. Les bons dosages et la méthode."
-date: 2026-10-30T04:00:00+01:00
-publishDate: 2026-10-30T04:00:00+01:00
-lastmod: 2026-10-30T04:00:00+01:00
+date: 2026-10-10T07:50:00+02:00
+publishDate: 2026-10-10T07:50:00+02:00
+lastmod: 2026-10-10T07:50:00+02:00
 categories: ["Crèmes et techniques"]
 tags: ["crème pâtissière", "chocolat", "amidon", "éclair", "technique"]
 author: marion-kieffer

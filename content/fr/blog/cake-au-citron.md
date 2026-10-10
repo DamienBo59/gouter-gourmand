@@ -1,9 +1,9 @@
 ---
 title: "Cake au citron moelleux, et parfumé"
 description: "Un cake au citron rate rarement par manque de citron : il rate parce que le parfum est mis au mauvais endroit, et parce qu'il sèche. Le zeste, le sirop, la cuisson et le glaçage, dans l'ordre."
-date: 2026-11-06T04:00:00+01:00
-publishDate: 2026-11-06T04:00:00+01:00
-lastmod: 2026-11-06T04:00:00+01:00
+date: 2026-10-10T08:10:00+02:00
+publishDate: 2026-10-10T08:10:00+02:00
+lastmod: 2026-10-10T08:10:00+02:00
 categories: ["Gâteaux et cakes"]
 tags: ["citron", "cake", "moelleux", "sirop", "glaçage"]
 author: marion-kieffer

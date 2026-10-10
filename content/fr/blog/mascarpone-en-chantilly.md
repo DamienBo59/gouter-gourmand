@@ -1,9 +1,9 @@
 ---
 title: "Mascarpone en chantilly : la méthode"
 description: "Le mascarpone seul ne monte pas, il graine. Le bon ratio avec la crème liquide, l'ordre des gestes, et comment rattraper une crème qui a tranché."
-date: 2026-10-13T05:00:00+02:00
-publishDate: 2026-10-13T05:00:00+02:00
-lastmod: 2026-10-13T05:00:00+02:00
+date: 2026-10-10T07:00:00+02:00
+publishDate: 2026-10-10T07:00:00+02:00
+lastmod: 2026-10-10T07:00:00+02:00
 categories: ["Crèmes et techniques"]
 tags: ["mascarpone", "chantilly", "crème montée", "technique"]
 author: marion-kieffer

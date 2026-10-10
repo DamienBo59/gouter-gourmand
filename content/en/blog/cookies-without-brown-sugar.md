@@ -1,9 +1,9 @@
 ---
 title: "Cookies without brown sugar, still soft"
 description: "Without brown sugar, a cookie spreads, pales and snaps. What brown sugar really brought, and how to replace it with white sugar and a spoonful of honey."
-date: 2026-10-27T04:00:00+01:00
-publishDate: 2026-10-27T04:00:00+01:00
-lastmod: 2026-10-27T04:00:00+01:00
+date: 2026-10-10T07:40:00+02:00
+publishDate: 2026-10-10T07:40:00+02:00
+lastmod: 2026-10-10T07:40:00+02:00
 categories: ["Baking without"]
 tags: ["cookies", "brown sugar", "substitution", "white sugar", "honey"]
 author: marion-kieffer

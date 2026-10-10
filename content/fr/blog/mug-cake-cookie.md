@@ -1,9 +1,9 @@
 ---
 title: "Mug cake cookie, moelleux au micro-ondes"
 description: "Un mug cake cookie rate presque toujours de la même façon : il sort spongieux ou caoutchouteux. Le jaune d'œuf seul, les bonnes quantités et le temps de cuisson qui le gardent fondant."
-date: 2026-11-03T04:00:00+01:00
-publishDate: 2026-11-03T04:00:00+01:00
-lastmod: 2026-11-03T04:00:00+01:00
+date: 2026-10-10T08:00:00+02:00
+publishDate: 2026-10-10T08:00:00+02:00
+lastmod: 2026-10-10T08:00:00+02:00
 categories: ["Petits goûters"]
 tags: ["mug cake", "cookie", "micro-ondes", "pépites de chocolat", "goûter express"]
 author: marion-kieffer

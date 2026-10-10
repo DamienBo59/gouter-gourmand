@@ -1,9 +1,9 @@
 ---
 title: "Tarte praline : la recette lyonnaise"
 description: "Une tarte praline réussie tient en deux ingrédients, des pralines roses et de la crème, mais tout se joue sur la réduction. Trop courte, elle coule ; trop longue, elle casse les dents. Les repères pour viser juste."
-date: 2026-11-10T04:00:00+01:00
-publishDate: 2026-11-10T04:00:00+01:00
-lastmod: 2026-11-10T04:00:00+01:00
+date: 2026-10-10T08:20:00+02:00
+publishDate: 2026-10-10T08:20:00+02:00
+lastmod: 2026-10-10T08:20:00+02:00
 categories: ["Tartes et classiques"]
 tags: ["tarte", "praline rose", "Lyon", "pâte sablée", "crème"]
 author: marion-kieffer

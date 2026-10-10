@@ -1,9 +1,9 @@
 ---
 title: "Cake à la banane, sans le cœur pâteux"
 description: "Un cake à la banane rate rarement par manque de goût : il rate par excès de banane ou de cuisson. Le bon poids, le bon mélange, et comment savoir qu'il est cuit."
-date: 2026-10-20T05:00:00+02:00
-publishDate: 2026-10-20T05:00:00+02:00
-lastmod: 2026-10-20T05:00:00+02:00
+date: 2026-10-10T07:20:00+02:00
+publishDate: 2026-10-10T07:20:00+02:00
+lastmod: 2026-10-10T07:20:00+02:00
 categories: ["Gâteaux et cakes"]
 tags: ["banane", "cake", "moelleux", "cuisson", "goûter"]
 author: marion-kieffer

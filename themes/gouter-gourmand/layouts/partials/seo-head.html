@@ -60,7 +60,7 @@
   "dateModified" (.Lastmod.Format "2006-01-02")
   "inLanguage" (.Site.Language.Locale | default "fr-FR")
   "mainEntityOfPage" .Permalink
-  "author" (dict "@type" "Person" "name" $authorName "url" (printf "%sa-propos/" .Site.Home.Permalink))
+  "author" (dict "@type" "Person" "name" $authorName "url" (printf "%s%s" .Site.Home.Permalink (cond (eq site.Language.Lang "en") "about/" "a-propos/")))
   "publisher" (dict "@type" "Organization" "name" .Site.Title "url" .Site.Home.Permalink)
   | jsonify (dict "indent" "  ") | safeJS
 }}
